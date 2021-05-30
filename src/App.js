@@ -2,7 +2,6 @@ import React from 'react';
 import Profile from './components/social-profile/social-profile'
 import user from './components/social-profile/user.json';
 
-
 const App = () => {
   return (
     <div>

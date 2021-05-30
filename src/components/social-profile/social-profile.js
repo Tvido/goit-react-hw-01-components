@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import defaultAva from '../../img/defaultAva.jpg';
 
-const Profile = ({ avatar, name, tag, location, followers, views, likes}) => {
+const Profile = ({ avatar, name, tag, location, followers, views, likes }) => {
     return (
         <div className="profile">
             <div className="description">
@@ -31,5 +33,25 @@ const Profile = ({ avatar, name, tag, location, followers, views, likes}) => {
         </div>
     )
 }
+
+Profile.defaultProps = {
+    avatar: defaultAva,
+    name: "NoName",
+    tag: "tag",
+    location: "Nowhere",
+    followers: "Zero",
+    views: "Zero",
+    likes: "Zero",
+};
+
+Profile.propTypes = {
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+};
 
 export default Profile;
