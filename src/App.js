@@ -1,11 +1,20 @@
 import React from 'react';
-import Social from './components/social-profile/social-profile'
+import Profile from './components/social-profile/social-profile'
+import user from './components/social-profile/user.json';
 
 
 const App = () => {
   return (
     <div>
-      <Social />
+      <Profile
+        avatar={user.avatar}
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
+      />
     </div>
   );
 };
