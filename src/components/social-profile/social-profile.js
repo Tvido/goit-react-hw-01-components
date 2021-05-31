@@ -45,7 +45,7 @@ Profile.defaultProps = {
 };
 
 Profile.propTypes = {
-  avatar: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
