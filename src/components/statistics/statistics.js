@@ -1,7 +1,7 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-const Statistics = ({item, label, percentage }) => (
+const StatisticsList = ({ item, label, percentage }) => (
   <li className={item}>
     <span className={label}>{label}</span>
     <span className={percentage}> {percentage}%</span>
@@ -14,4 +14,4 @@ const Statistics = ({item, label, percentage }) => (
 // Statistics.propTypes = {
 // };
 
-export default Statistics;
+export default StatisticsList;
