@@ -36,12 +36,12 @@ const Profile = ({ avatar, name, tag, location, followers, views, likes }) => {
 
 Profile.defaultProps = {
   avatar: defaultAva,
-  name: "NoName",
-  tag: "tag",
-  location: "Nowhere",
-  followers: "Zero",
-  views: "Zero",
-  likes: "Zero",
+  // name: "NoName",
+  // tag: "tag",
+  // location: "Nowhere",
+  // followers: "Zero",
+  // views: "Zero",
+  // likes: "Zero",
 };
 
 Profile.propTypes = {
