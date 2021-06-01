@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const StatisticsList = ({ item, label, percentage }) => (
   <li className={item}>
@@ -8,10 +8,10 @@ const StatisticsList = ({ item, label, percentage }) => (
   </li>
 );
 
-// Statistics.defaultProps = {
-// };
-
-// Statistics.propTypes = {
-// };
+StatisticsList.propTypes = {
+  item: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
+};
 
 export default StatisticsList;
