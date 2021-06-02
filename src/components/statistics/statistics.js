@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import "./statistics.css";
+
 const StatisticsList = ({ item, label, percentage }) => (
-  <li className={item}>
-    <span className={label}>{label}</span>
-    <span className={percentage}> {percentage}%</span>
+  <li className={"statistics__item"}>
+    <span className={"statistics__label"}>{label}</span>
+    <span className={"statistics__percentage"}> {percentage}%</span>
   </li>
 );
 

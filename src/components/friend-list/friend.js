@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import defaultAva from '../../img/defaultAva.jpg';
 
+import "./friend-list.css";
 
 const FriendListItem = ({ isOnline, avatar, name }) => (
-  <li className="item">
-    <span className="status">{isOnline}</span>
+  <li className="friend__list-item">
+    <span className={isOnline ? "friend-list__status friend__list-status-online" : "friend-list__status friend__list-status-offline"}>{isOnline}</span>
     <img className="avatar" src={avatar} alt="" width="48" />
-    <p className="name">{name}</p>
+    <p className="friend__list-name">{name}</p>
   </li>
 );
 

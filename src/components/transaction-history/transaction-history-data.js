@@ -1,10 +1,11 @@
 import React from 'react';
 import TransactionHistory from './transaction-history';
 
+import "./transaction-history.css";
 
 const TransactionList = ({ items }) => (
-  <table className="transaction-history">
-    <thead>
+  <table className="transaction__history">
+    <thead className="transaction__head">
       <tr>
         <th>Type</th>
         <th>Amount</th>

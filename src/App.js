@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "./App.css";
+
 import Profile from './components/social-profile/social-profile'
 import Statistics from './components/statistics/statistics-data';
 import FriendList from './components/friend-list/friend-list';
