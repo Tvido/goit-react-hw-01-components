@@ -5,9 +5,8 @@
   overflow: hidden;
   border: 1px solid rgb(209, 209, 209);
   border-radius: 5px;
-  /* background-color: rgb(247, 247, 247); */
   box-shadow: 2px 4px 4px 2px rgba(187, 187, 187, 0.3);
-  color: rgb(128, 102, 102);
+  color: rgb(88, 51, 51);
 }
 
 .statistics__title {
@@ -50,4 +49,24 @@
 .statistics__item {
   border: 1px solid rgb(209, 209, 209);
   border-radius: 5px;
+}
+
+.statistics__item:nth-child(1) {
+  background-color: aqua;
+}
+
+.statistics__item:nth-child(2) {
+  background-color: rgb(107, 196, 154);
+}
+
+.statistics__item:nth-child(3) {
+  background-color: rgb(218, 163, 100);
+}
+
+.statistics__item:nth-child(4) {
+  background-color: rgb(157, 129, 194);
+}
+
+.statistics__item:nth-child(5) {
+  background-color: rgb(226, 131, 131);
 }
