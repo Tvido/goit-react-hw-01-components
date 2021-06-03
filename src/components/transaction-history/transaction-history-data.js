@@ -28,7 +28,8 @@ const TransactionList = ({ items }) => (
 );
 
 TransactionList.defaultProps = {
-};
+  amount: "---",
+  };
 
 TransactionList.propTypes = {
   type: PropTypes.string,
