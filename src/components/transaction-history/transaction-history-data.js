@@ -1,5 +1,6 @@
 import React from 'react';
 import TransactionHistory from './transaction-history';
+import PropTypes from 'prop-types';
 
 import "./transaction-history.css";
 
@@ -25,5 +26,15 @@ const TransactionList = ({ items }) => (
     </tbody>
   </table>
 );
+
+TransactionList.defaultProps = {
+};
+
+TransactionList.propTypes = {
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
+
+};
 
 export default TransactionList;
